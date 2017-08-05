@@ -75,7 +75,7 @@ a {
 button, .btn {
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px 15px;
   text-transform: uppercase;
   font-weight: 300;
@@ -94,5 +94,37 @@ button, .btn {
   &.three:hover {
     border-color: yellow;
     font-weight: 400;
+  }
+}
+
+.navbar {
+  background: rgba(0,0,0,0.6);
+  width: 75%;
+  max-width: 750px;
+  min-width: 360px;
+  border-radius: 4px 4px 0 0;
+  color: rgba(255,255,255,0.5);
+  margin: auto;
+  
+  .btn {
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+    &.home { float: right; }
+
+    &:hover {
+      border: none;
+      color: red;
+    }
+  }
+
+  &.page {
+    text-align: center;
+    .btn { 
+      margin: 0;
+      width: 24%; 
+    }
   }
 }

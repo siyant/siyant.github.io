@@ -1,0 +1,16 @@
+
+{% if page.layout == "post" %}
+  <div class="navbar">
+   <a class="btn navbtn back" href="/posts">&lt; All Posts</a>
+   <a class="btn navbtn home" href="/">Home</a>
+  </div>
+
+{% else %}
+  <div class="navbar page">
+    {% unless page.navtitle == "home" %}<a class="btn navbtn one" href="/">Home</a>{% endunless %}
+    {% unless page.navtitle == "about" %}<a class="btn navbtn two" href="/about">About</a>{% endunless %}
+    {% unless page.navtitle == "projects" %}<a class="btn navbtn three" href="/projects">Projects</a>{% endunless %}
+    {% unless page.navtitle == "posts" %}<a class="btn navbtn four" href="/posts">Posts</a>{% endunless %}
+    {% unless page.navtitle == "photos" %}<a class="btn navbtn five" href="/photog">Photos</a>{% endunless %}
+  </div>
+{% endif %}
