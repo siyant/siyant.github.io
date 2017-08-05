@@ -32,7 +32,7 @@ body {
   max-width: 750px;
   min-width: 360px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 50px;
   box-sizing: border-box;
   border-radius: 3px;
 
@@ -41,6 +41,10 @@ body {
     max-width: 600px;
     text-align: center;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 p {
@@ -76,6 +80,7 @@ button, .btn {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 0.85em;
+  line-height: 3;
   margin: 0 5px;
 
   &.one:hover {
