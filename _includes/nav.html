@@ -7,10 +7,10 @@
 
 {% else %}
   <div class="navbar page">
-    {% unless page.navtitle == "home" %}<a class="btn navbtn one" href="/">Home</a>{% endunless %}
-    {% unless page.navtitle == "about" %}<a class="btn navbtn two" href="/about">About</a>{% endunless %}
-    {% unless page.navtitle == "projects" %}<a class="btn navbtn three" href="/projects">Projects</a>{% endunless %}
-    {% unless page.navtitle == "posts" %}<a class="btn navbtn four" href="/posts">Posts</a>{% endunless %}
-    {% unless page.navtitle == "photos" %}<a class="btn navbtn five" href="/photog">Photos</a>{% endunless %}
+    {% unless page.navtitle == "home" %}<a class="btn navbtn" href="/">Home</a>{% endunless %}
+    {% unless page.navtitle == "about" %}<a class="btn navbtn" href="/about">About</a>{% endunless %}
+    {% unless page.navtitle == "projects" %}<a class="btn navbtn" href="/projects">Projects</a>{% endunless %}
+    {% unless page.navtitle == "posts" %}<a class="btn navbtn" href="/posts">Posts</a>{% endunless %}
+    {% unless page.navtitle == "photos" %}<a class="btn navbtn" href="/photog">Photos</a>{% endunless %}
   </div>
 {% endif %}
