@@ -24,7 +24,12 @@ body {
 
 .top-anchor { height:0; }
 
-.wrapper { margin: 10% auto; width: 75%; max-width: 800px; min-width: 360px; }
+.wrapper { 
+  margin: 10% auto;
+  width: 75%;
+  max-width: 800px;
+  min-width: 360px;
+}
 
 @media (max-width: 36em) {
   .wrapper { width: 100%; margin: 75px auto 150px;}
@@ -40,8 +45,8 @@ body {
   border-radius: 3px;
 
   &.home {
-    width: 60%;
-    max-width: 600px;
+    width: 80%;
+    padding: 20px 10px;
     text-align: center;
   }
 }
