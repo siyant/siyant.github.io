@@ -2,6 +2,7 @@
 
 html, body, form, fieldset, table, tr, td, img {
   font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
 }
 
 input, button, select, textarea, optgroup, option {
@@ -23,14 +24,16 @@ body {
 
 .top-anchor { height:0; }
 
-.wrapper { margin: 10% 0;}
+.wrapper { margin: 10% auto; width: 75%; max-width: 800px; min-width: 360px; }
+
+@media (max-width: 750px) {
+  .wrapper { width: 100%; margin: 75px auto 150px;}
+}
 
 .content-block {
   background: white;
   color: #333;
-  width: 75%;
-  max-width: 750px;
-  min-width: 360px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 50px;
   box-sizing: border-box;
@@ -48,8 +51,8 @@ img {
 }
 
 p {
-  font-size: 0.85em;
-  line-height: 1.5em;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,7 +82,7 @@ button, .btn {
   padding: 10px 15px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 0.85em;
+  font-size: 0.85rem;
   line-height: 3;
   margin: 0 5px;
 
@@ -92,9 +95,7 @@ button, .btn {
 
 .navbar {
   background: rgba(0,0,0,0.6);
-  width: 75%;
-  max-width: 750px;
-  min-width: 360px;
+  width: 100%;
   border-radius: 4px 4px 0 0;
   color: rgba(255,255,255,0.5);
   margin: auto;

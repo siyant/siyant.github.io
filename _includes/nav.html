@@ -1,9 +1,17 @@
 
 {% if page.layout == "post" %}
-  <div class="navbar">
-   <a class="btn navbtn back" href="/posts">&lt; All Posts</a>
-   <a class="btn navbtn home" href="/">Home</a>
-  </div>
+  {% if page.category == "post" %}
+    <div class="navbar">
+      <a class="btn navbtn back" href="/posts">&lt; All Posts</a>
+      <a class="btn navbtn home" href="/">Home</a>
+    </div>
+
+  {% elsif page.category == "project" %}
+    <div class="navbar">
+      <a class="btn navbtn back" href="/projects">&lt; All Projects</a>
+      <a class="btn navbtn home" href="/">Home</a>
+    </div>
+  {% endif %}
 
 {% else %}
   <div class="navbar page">
