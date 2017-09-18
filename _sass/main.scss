@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway:400,600');
 
 html, body, form, fieldset, table, tr, td, img {
   font-family: 'Libre Franklin', sans-serif;
@@ -63,7 +63,7 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Rubik, serif;
+  font-family: Raleway, serif;
 }
 
 hr {
@@ -87,9 +87,11 @@ button, .btn {
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: transparent;
+  color: inherit;
   padding: 10px 15px;
+  font-family: Raleway;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 0.85rem;
   line-height: 3;
   margin: 0 5px;

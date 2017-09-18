@@ -8,7 +8,7 @@ slug: exploreSUTD
 
 exploreSUTD is the official mobile application of the Singapore University of Technology and Design.
 
-I worked with two other students to conceptualize and develop this app for my university's admissions office. We pitched the idea of an app that would be not only informative for prospective students, but also have interactive elements. A main focus would be to showcase the unique culture of our school. This landed us a contract to develop and maintain the app, with potential for new features to be added.
+I worked with two other students to conceptualize and develop this app for my university's admissions office. We pitched the idea of an app that would not only be informative for prospective students, but also have interactive elements. A main focus would be to showcase the unique culture of our school. This landed us a contract to develop and maintain the app, with potential for new features to be added.
 
 The three main components of the app are a campus map, event calendar and information for applicants:
 
