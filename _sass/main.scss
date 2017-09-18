@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway:400,600');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway:400,500');
 
 html, body, form, fieldset, table, tr, td, img {
   font-family: 'Libre Franklin', sans-serif;
@@ -54,8 +54,16 @@ body {
   }
 }
 
+@media (max-width: 48em) {
+  .content-block.home { width: 90%;}
+}
+@media (max-width: 36em) {
+  .content-block.home { width: 100%;}
+}
+
 img {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -70,10 +78,7 @@ hr {
   border: 0;
   height: 1px;
   margin: 1em 0;
-  background-image: -webkit-linear-gradient(left, #fff, #aaa, #fff);
-  background-image: -moz-linear-gradient(left, #fff, #aaa, #fff);
-  background-image: -ms-linear-gradient(left, #fff, #aaa, #fff);
-  background-image: -o-linear-gradient(left, #fff, #aaa, #fff);
+  background: #9BE1E9;
 }
 
 a {
@@ -91,10 +96,11 @@ button, .btn {
   padding: 10px 15px;
   font-family: Raleway;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 1px;
   font-size: 0.85rem;
   line-height: 3;
-  margin: 0 5px;
+  margin: 0 3px;
 
   &:nth-of-type(5n+1):hover { border-color: #9BE1E9; }
   &:nth-of-type(5n+2):hover { border-color: #C7F48B; }
