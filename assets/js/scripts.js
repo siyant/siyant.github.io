@@ -5,7 +5,8 @@ $(document).ready(function() {
   if ($(".content-block").hasClass('fadeOut')) {
     $(".content-block").removeClass("fadeOut").addClass("fadeIn");
   }
-  $(".navbtn").click(function() {
+  $(".navbtn").click(function(e) {
+    if (e.metaKey || e.ctrlKey) return;   // prevent fade out for cmd/ctrl+click
     $(".content-block").removeClass("fadeIn").addClass("fadeOut");
   });
 });
