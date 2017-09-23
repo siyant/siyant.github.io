@@ -1,0 +1,40 @@
+---
+layout: post
+category: project
+title: Gametize player platform
+date: 2017-08-31
+slug: gametize
+---
+
+As a Technology Development Intern at Gametize, I redeveloped the company's customer-facing web platform.
+
+_[Gametize](https://gametize.com/index) is a gamification software and consulting company that focuses on using game psychology to increase user engagement. On the Gametize platform, users can complete various kinds of challenges to earn points, badges and rewards._
+
+I was tasked to redevelop the the player web platform using a front-end web framework, in order to improve the speed of the website and align the user interface (UI) with the existing mobile applications. Together with another intern, I completed the redesign and development of the platform within the 4-month internship.
+
+Some of the different screens in the site:
+<div class="gallery-4col">
+  <img src="../assets/img/proj-gametize/1home.png">
+  <img src="../assets/img/proj-gametize/2featured.png">
+  <img src="../assets/img/proj-gametize/3topicsearch.png">
+  <img src="../assets/img/proj-gametize/4challenge.png">
+</div>
+
+<br>
+Mobile carousell and drop-down menu, following the style of the Gametize mobile apps:
+
+<img src="../assets/img/proj-gametize/projecthome-mobile.png">
+
+<br>
+Layout with a sidebar for big screens:
+
+<img src="../assets/img/proj-gametize/projecthome.png">
+
+
+- Built with [React](https://facebook.github.io/react/), a JavaScript library for creating UIs
+- Content is fetched and posted through API calls, making the site very lean and fast
+- Was involved in entire software development process, from assessing requirements to building and testing
+- Designed UI to be modern, intuitive and mobile-responsive
+
+
+This new player platform is being used in a client project.
