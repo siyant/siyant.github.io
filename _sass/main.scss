@@ -2,7 +2,6 @@
 
 html, body, form, fieldset, table, tr, td, img {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14.5px;
 }
 
 input, button, select, textarea, optgroup, option {
@@ -20,6 +19,7 @@ body {
   background-position: center bottom;
   width: 100%;
   height: 100%;
+  font-size: 0.9em;
 }
 
 .top-anchor { height:0; }
