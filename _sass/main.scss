@@ -140,23 +140,45 @@ button, .btn {
   }
 }
 
-.gallery-4col {
+.gallery {
   &::after {
     content: "";
     display: table;
     clear: both;
   }
-  * {
-    width: 25%;
-    padding-left: 5px;
+  & > * {
+    padding-right: 5px;
     margin-bottom: 5px;
     box-sizing: border-box;
     float: left;
   }
 }
+.g4col > * { width: 25%; }
+.g3col > * { width: 33.3%; }
+
+@media (max-width: 60em) {
+  .g3col > * { width: 50%; }
+}
 @media (max-width: 48em) {
-  .gallery-4col > * { width: 50%;}
+  .g4col > * { width: 50%;}
 }
 @media (max-width: 36em) {
-  .gallery-4col > * { width: 100%; padding: 0;}
+  .g4col > * { width: 100%; padding: 0;}
+  .g3col > * { width: 100%; padding: 0;}
 }
+
+.gallery-title {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px #333;
+}
+
+/* utility styles */
+.width100 { width: 100%; }
+.relative { position: relative; }

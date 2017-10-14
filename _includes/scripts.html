@@ -3,3 +3,8 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
 <script src="/assets/js/scripts.js"></script>
+
+{% if page.layout == 'photography' %}
+  <script src="/assets/js/500px.js"></script>
+  <script src="/assets/js/gallery.js"></script>
+{% endif %}

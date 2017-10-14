@@ -13,7 +13,7 @@ _[Gametize](https://gametize.com/index) is a gamification software and consultin
 I was tasked to redevelop the the player web platform using a front-end web framework, in order to improve the speed of the website and align the user interface (UI) with the existing mobile applications. Together with another intern, I completed the redesign and development of the platform within the 4-month internship.
 
 Some of the different screens in the site:
-<div class="gallery-4col">
+<div class="gallery g4col">
   <img src="../assets/img/proj-gametize/1home.png">
   <img src="../assets/img/proj-gametize/2featured.png">
   <img src="../assets/img/proj-gametize/3topicsearch.png">

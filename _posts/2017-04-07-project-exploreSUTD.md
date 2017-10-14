@@ -12,7 +12,7 @@ I worked with two other students to conceptualize and develop this app for my un
 
 The three main components of the app are a campus map, event calendar and information for applicants:
 
-<div class="gallery-4col">
+<div class="gallery g4col">
   <img src="../assets/img/proj-exploreSUTD/landing.png">
   <img src="../assets/img/proj-exploreSUTD/map.png">
   <img src="../assets/img/proj-exploreSUTD/events.png">
