@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Blog Posts - coming soon!
+title: Blog Posts
 navtitle: posts
 permalink: /posts
 ---
