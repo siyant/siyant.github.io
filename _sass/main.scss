@@ -67,6 +67,11 @@ img {
   box-sizing: border-box;
 }
 
+img.inline {
+  max-width: 400px;
+  margin-bottom: 0.5em;
+}
+
 ol, ul {
   line-height: 2rem;
 }
@@ -80,6 +85,12 @@ hr {
   height: 1px;
   margin: 1em 0;
   background: #9BE1E9;
+}
+
+blockquote {
+  margin: 0 1em;
+  padding-left: 1em;
+  border-left: 4px solid #118477;
 }
 
 a {
