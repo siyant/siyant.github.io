@@ -76,8 +76,16 @@ ol, ul {
   line-height: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: Raleway, serif;
+}
+
+h6 {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  margin: 1em 0;
 }
 
 hr {
@@ -112,13 +120,16 @@ button, .btn {
   letter-spacing: 1px;
   font-size: 0.8em;
   line-height: 3;
-  margin: 0 3px;
+  margin: 0 5px 0 0;
+  white-space: nowrap;
 
   &:nth-of-type(5n+1):hover { border-color: #9BE1E9; }
   &:nth-of-type(5n+2):hover { border-color: #C7F48B; }
   &:nth-of-type(5n+3):hover { border-color: #F5D361; }
   &:nth-of-type(5n+4):hover { border-color: #EE9957; }
-  &:nth-of-type(5n+5):hover { border-color: #FD4B6E; } 
+  &:nth-of-type(5n+5):hover { border-color: #FD4B6E; }
+
+  i.fa { vertical-align: sub; } /* social buttons */
 }
 
 .navbar {
