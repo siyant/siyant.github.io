@@ -52,8 +52,10 @@ displayGallery = function(photos) {
 
 photoCard = function(gallery_id, image_src, image_url) {
   return (
-    `<a href="https://500px.com${image_url}" target="_blank"><div class='relative' id='${gallery_id}'>
-      <img class='500px' src='${image_src}' />
-    </div></a>`
+    `<a href="https://500px.com${image_url}" target="_blank">
+      <div class='relative photoCard'>
+        <img class='500px' src='${image_src}' />
+      </div>
+    </a>`
   )
 }

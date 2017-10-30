@@ -178,9 +178,18 @@ button, .btn {
   }
 }
 
-.g3col > * {
+/*.g3col > * {
   @media (min-width: 48em) { width: 50%; }
   @media (min-width: 72em) { width: 33.3%; }
+}*/
+
+.g3col {
+  -webkit-columns: 3 15rem;
+     -moz-columns: 3 15rem;
+          columns: 3 15rem;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
 }
 
 .g4col > * {
