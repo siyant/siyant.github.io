@@ -188,6 +188,10 @@ button, .btn {
   @media (min-width: 60em) { width: 25%; }
 }
 
+div.gallery-thumb {
+  cursor: pointer;
+}
+
 .gallery-title {
   position: absolute;
   top: 50%;
