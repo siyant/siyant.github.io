@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 galleryCard = function(gallery_id, image_src, title) {
   return (
-    `<div class='gallery-thumb relative' id='${gallery_id}'>
+    `<div class='gallery-thumb relative animated fadeIn' id='${gallery_id}'>
       <img class='500px' src='${image_src}' />
       <h2 class='gallery-title'>${title}</h2>
     </div>`
@@ -34,8 +34,7 @@ displayGalleryList = function(galleries) {
 fetchGallery = function(id) {
   $(".gallery-thumb").css("opacity", 0.5);
   $("#"+id).css("opacity", 1);
-  $("h2#photos").remove();
-  $("#gallery-photos").empty();
+  $(".photoCard").removeClass("fadeIn").addClass("fadeOut");
   _500px.api('/users/22764323/galleries/'+id+'/items', {image_size: 4}, function (response) {
     photos = response.data.photos;
     displayGallery(photos);
@@ -43,7 +42,11 @@ fetchGallery = function(id) {
 }
 
 displayGallery = function(photos) {
-  $("#gallery-photos").before("<h2 id='photos'>Photos</h2>");
+  console.log($("#photosText"));
+  if ($("#photosText").length == 0) {
+    $("#gallery-photos").before("<h2 class='animated fadeIn' id='photosText'>Photos</h2>");
+  }
+  $("#gallery-photos").empty();
   for (i=0; i<photos.length; i++) {
     p = photos[i];
     $("#gallery-photos").append(photoCard(p.id, p.image_url, p.url));
@@ -53,7 +56,7 @@ displayGallery = function(photos) {
 photoCard = function(gallery_id, image_src, image_url) {
   return (
     `<a href="https://500px.com${image_url}" target="_blank">
-      <div class='relative photoCard'>
+      <div class='relative photoCard animated fadeIn'>
         <img class='500px' src='${image_src}' />
       </div>
     </a>`
