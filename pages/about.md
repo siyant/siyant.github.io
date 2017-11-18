@@ -24,7 +24,7 @@ Yay for social icons!
   <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
   Si-Yan Teo
 </a>
-<a class="btn" href="mailto:siyan_teo@mymail.sutd.edu.sg">
+<a class="btn" href="mailto:teosiyan@hotmail.com">
   <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
   teosiyan@hotmail.com
 </a>
