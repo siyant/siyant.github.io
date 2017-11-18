@@ -1,12 +1,12 @@
 
 {% if page.layout == "post" %}
-  {% if page.category == "post" %}
+  {% if page.collection == "posts" %}
     <div class="navbar">
       <a class="btn navbtn back" href="/posts">&lt; All Posts</a>
       <a class="btn navbtn home" href="/">Home</a>
     </div>
 
-  {% elsif page.category == "project" %}
+  {% elsif page.collection == "projects" %}
     <div class="navbar">
       <a class="btn navbtn back" href="/projects">&lt; All Projects</a>
       <a class="btn navbtn home" href="/">Home</a>
