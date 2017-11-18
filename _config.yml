@@ -25,7 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-permalink: /:categories/:title
+permalink: /:year/:month/:day/:title
 markdown: kramdown
 highlighter: rouge
 sass:
