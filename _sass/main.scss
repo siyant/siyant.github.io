@@ -18,27 +18,49 @@ body {
   background-attachment: fixed;
   background-position: center bottom;
   width: 100%;
+  min-width: 400px;
   height: 100%;
   font-size: 0.9em;
 }
 
-.top-anchor { height:0; }
-
-.wrapper { 
+.wrapper {
   width: 100%;
-  margin: 50px auto 150px;
-  min-width: 360px;
-  max-width: 960px;
+  display: grid;
+  grid-template-rows: 50px min-content min-content 150px;
+  grid-template-areas:
+    "."
+    "n"
+    "c"
+    ".";
 }
 
 @media (min-width: 36em) {
   .wrapper {
-    width: 75%;
-    margin: 5% auto 10%;
+    grid-template-columns: auto minmax(400px, 75%) auto;
+    grid-template-areas:
+    ". . ."
+    ". n ."
+    ". c ."
+    ". . .";
+
+    &.home {
+      grid-template-columns: auto minmax(400px, 60%) auto;
+    }
+  }
+}
+
+@media (min-width: 80em) {
+  .wrapper {
+    grid-template-columns: auto 960px auto;
+
+    &.home {
+      grid-template-columms: auto 768px auto;
+    }
   }
 }
 
 .content-block {
+  grid-area: c;
   background: white;
   line-height: 1.5rem;
   letter-spacing: 0.1px;
@@ -51,15 +73,9 @@ body {
   border-radius: 3px;
 
   &.home {
-    width: 100%;
-    min-width: 360px;
     padding: 20px 10px;
     text-align: center;
   }
-}
-
-@media (min-width: 36em) {
-  .content-block.home { width: 80%;}
 }
 
 img {
@@ -133,6 +149,7 @@ button, .btn {
 }
 
 .navbar {
+  grid-area: n;
   background: rgba(0,0,0,0.6);
   width: 100%;
   border-radius: 4px 4px 0 0;
