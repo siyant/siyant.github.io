@@ -1,7 +1,11 @@
 ---
 layout: page
 ---
+<br>
 
-{% for post in site.projects %}
-  <p><a class="navbtn" href={{post.url}}>{{ post.title }}</a></p>
+{% for post in site.projects reversed %}
+  <a class="project-card" href={{post.url}}>
+    <div class="img" style="background-image: url('{{post.img}}')"></div>
+    <h1>{{ post.title }}</h1>
+  </a>
 {% endfor %}

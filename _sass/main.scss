@@ -236,3 +236,34 @@ div.gallery-thumb {
 .width100 { width: 100%; }
 .maxwidth250 { max-width: 250px; }
 .relative { position: relative; }
+
+/* project cards */
+.project-card {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+
+  .img {
+    filter: brightness(70%);
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+  }
+
+  &:hover .img{
+    filter: brightness(50%);
+  }
+
+  h1 {
+    position: absolute;
+    top: 20%;
+    font-size: 2.0em;
+    line-height: 1.25em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px #666;
+  }
+}
