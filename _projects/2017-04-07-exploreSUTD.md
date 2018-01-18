@@ -2,7 +2,7 @@
 layout: post
 title: exploreSUTD app
 date: 2017-04-07
-slug: exploreSUTD
+img: /assets/img/proj-exploreSUTD/header-img.jpg
 ---
 
 exploreSUTD is the official mobile application of the Singapore University of Technology and Design.
