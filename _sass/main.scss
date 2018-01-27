@@ -232,9 +232,24 @@ div.gallery-thumb {
   text-shadow: 1px 1px 3px #333;
 }
 
+.youtube-iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* utility styles */
 .width100 { width: 100%; }
-.maxwidth250 { max-width: 250px; }
+.maxwidth250 { max-width: 250px; } /* generally for portrait images */
+.maxwidth400 { max-width: 400px; } /* generally for landscape images */
 .relative { position: relative; }
 
 /* project cards */
