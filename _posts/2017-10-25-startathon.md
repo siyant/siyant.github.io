@@ -1,8 +1,6 @@
 ---
 layout: post
-category: post
 title: Startathon - Project Vigilance
-date: 2017-10-25
 ---
 
 ![Startathon banner](/assets/img/2017-10-25-startathon/banner.png){: .inline }

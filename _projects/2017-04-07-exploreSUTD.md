@@ -1,7 +1,6 @@
 ---
 layout: post
 title: exploreSUTD app
-date: 2017-04-07
 img: /assets/img/proj-exploreSUTD/header-img.jpg
 ---
 
