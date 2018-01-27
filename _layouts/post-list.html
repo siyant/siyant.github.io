@@ -3,5 +3,5 @@ layout: page
 ---
 
 {% for post in site.posts %}
-  <p><a class="navbtn" href={{post.url}}>{{ post.title }}</a></p>
+  <p>{{ post.date | date: "%-d %B %Y" }} | <a class="navbtn" href={{post.url}}>{{ post.title }}</a></p>
 {% endfor %}
