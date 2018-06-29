@@ -57,7 +57,7 @@ photoCard = function(photo) {
     `<a href='https://www.flickr.com/photos/${photo.owner}/${photo.id}/' target='_blank'>
       <div class='relative photoCard animated fadeIn'>
         <img src='https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg' />
-        <h2 class='gallery-title'>${photo.title}</h2>
+        <h2 class='gallery-title animatedFast fadeIn'>${photo.title}</h2>
       </div>
     </a>`
     )

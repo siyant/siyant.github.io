@@ -23,6 +23,11 @@ body {
   font-size: 0.9em;
 }
 
+.animatedFast {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -190,9 +195,9 @@ button, .btn {
   }
   & > * {
     padding-right: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     box-sizing: border-box;
-    float: left;
+    display: inline-block;
     width: 100%;
   }
 }
@@ -230,6 +235,16 @@ div.gallery-thumb {
   text-align: center;
   color: white;
   text-shadow: 1px 1px 3px #333;
+  display: none;
+}
+
+.photocard:hover {
+  & > .gallery-title {
+    display: block;
+  }
+  & > img {
+    filter: brightness(80%) blur(0.5px);
+  }
 }
 
 .youtube-iframe-container {
