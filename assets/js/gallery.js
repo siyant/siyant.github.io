@@ -1,18 +1,22 @@
 $(document).ready(function() {
   // fetch and display data for photog gallery
   if($("#galleries-list").length > 0) {
-    _500px.init({
-      sdk_key: 'c05562552532e685ce126f553f266817dd9f1664'
+    var flickr = new Flickr({
+      api_key: 'c44dc9745574cf4db11bc5f3c182beb0'
     });
 
-    _500px.api('/users/22764323/galleries', function (response) {
-      galleries = response.data.galleries;
-      displayGalleryList(galleries);
-    });
+    flickr.people.getPublicPhotos({user_id: '32043573@N03', per_page: 20}, function(err, res) {
+      if (err) {
+        console.log('error getting photos :(')
+      } else {
+        var photos = res.photos.photo
+        displayGallery(photos)
+      }
+    })
   }
 })
 
-galleryCard = function(gallery_id, image_src, title) {
+/*galleryCard = function(gallery_id, image_src, title) {
   return (
     `<div class='gallery-thumb relative animated fadeIn' id='${gallery_id}'>
       <img class='500px' src='${image_src}' />
@@ -39,26 +43,23 @@ fetchGallery = function(id) {
     photos = response.data.photos;
     displayGallery(photos);
   });
-}
+}*/
 
 displayGallery = function(photos) {
-  console.log($("#photosText"));
-  if ($("#photosText").length == 0) {
-    $("#gallery-photos").before("<h2 class='animated fadeIn' id='photosText'>Photos</h2>");
-  }
   $("#gallery-photos").empty();
   for (i=0; i<photos.length; i++) {
-    p = photos[i];
-    $("#gallery-photos").append(photoCard(p.id, p.image_url, p.url));
+    $("#gallery-photos").append(photoCard(photos[i]));
   }
 }
 
-photoCard = function(gallery_id, image_src, image_url) {
+photoCard = function(photo) {
   return (
-    `<a href="https://500px.com${image_url}" target="_blank">
+    `<a href='https://www.flickr.com/photos/${photo.owner}/${photo.id}/' target='_blank'>
       <div class='relative photoCard animated fadeIn'>
-        <img class='500px' src='${image_src}' />
+        <img src='https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg' />
+        <h2 class='gallery-title'>${photo.title}</h2>
       </div>
     </a>`
-  )
+    )
 }
+
