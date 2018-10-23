@@ -7,7 +7,7 @@ permalink: /about
 
 Hello! I'm Si-Yan :)
 
-I'm a software developer who loves building all kinds of things, and believes in using technology to better people's lives. (That includes automating all the tedious things I'm too lazy to do manually 😂 although I usually end up spending even more time.) I program mostly in Python and JS, but I'm always open to trying new languages, frameworks, and best practices. The fun thing about being in tech is that things keep changing and there'll always be something new to learn!
+I'm a software developer who loves building all kinds of things, and believes in using technology to improve people's lives. (That includes automating all the tedious things I'm too lazy to do manually 😂 although I usually end up spending even more time.) I program mostly in Python and JS, but I'm always open to trying new languages, frameworks, and best practices. The fun thing about being in tech is that things keep changing and there'll always be something new to learn!
 
 I recently graduated from Singapore University of Technology and Design, where I studied Information Systems. Currently, I'm working at GovTech in the Sensors and Internet of Things team.
 

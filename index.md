@@ -8,7 +8,7 @@ layout: home
 <hr style="width: 80px; margin:30px auto">
 
 
-I'm a software developer who loves building all kinds of things, and believes in using technology to better people's lives. [More about me here](/about), or check out my:
+I'm a software developer who loves building all kinds of things, and believes in using technology to improve people's lives. [More about me here](/about), or check out my:
 
 <a class="btn navbtn" href="/projects">Projects</a>
 <a class="btn navbtn" href="/posts">Posts</a>
