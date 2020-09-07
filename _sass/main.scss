@@ -30,7 +30,7 @@ body {
   background-attachment: fixed;
   background-position: center bottom;
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
   height: 100%;
   font-size: 0.9em;
 }
@@ -44,38 +44,13 @@ body {
   width: 100%;
   min-height: 100%;
   display: grid;
-  grid-template-rows: 50px min-content min-content minmax(150px, auto);
+  grid-template-rows: 50px min-content min-content minmax(200px, auto);
   grid-template-columns: 100%;
   grid-template-areas:
     "."
     "n"
     "c"
     ".";
-}
-
-@media (min-width: 36em) {
-  .wrapper {
-    grid-template-columns: auto minmax(400px, 75%) auto;
-    grid-template-areas:
-      ". . ."
-      ". n ."
-      ". c ."
-      ". . .";
-
-    &.home {
-      grid-template-columns: auto minmax(400px, 60%) auto;
-    }
-  }
-}
-
-@media (min-width: 80em) {
-  .wrapper {
-    grid-template-columns: auto 960px auto;
-
-    &.home {
-      grid-template-columms: auto 768px auto;
-    }
-  }
 }
 
 .content-block {
@@ -87,12 +62,42 @@ body {
   color: #333;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 50px;
+  padding: 20px;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 0 0 3px 3px;
 
   &.home {
     text-align: center;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 36em) {
+  .wrapper {
+    grid-template-columns: auto minmax(300px, 75%) auto;
+    grid-template-areas:
+      ". . ."
+      ". n ."
+      ". c ."
+      ". . .";
+
+    &.home {
+      grid-template-columns: auto minmax(300px, 60%) auto;
+    }
+  }
+
+  .content-block {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 80em) {
+  .wrapper {
+    grid-template-columns: auto 960px auto;
+
+    &.home {
+      grid-template-columms: auto 768px auto;
+    }
   }
 }
 
@@ -158,15 +163,16 @@ button,
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  padding: 10px 15px;
+  padding: 4px 15px;
   font-family: Raleway;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 0.8em;
-  line-height: 3;
-  margin: 0 5px 0 0;
   white-space: nowrap;
+  margin: 4px 2px;
+  white-space: nowrap;
+  display: inline-block;
 
   &:nth-of-type(5n + 1):hover {
     border-color: #9be1e9;
@@ -202,7 +208,8 @@ button,
     color: #fff;
     margin: 0 10px;
     padding: 0;
-    display: inline-block;
+    line-height: 3;
+    height: 36px;
     &.home {
       float: right;
     }
@@ -338,7 +345,7 @@ div.gallery-thumb {
   display: block;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   .img {
     filter: brightness(70%);
@@ -354,12 +361,16 @@ div.gallery-thumb {
 
   h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
     font-size: 2em;
     line-height: 1.25em;
     width: 100%;
     font-weight: bold;
     color: #fff;
     text-shadow: 1px 1px 5px #666;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
