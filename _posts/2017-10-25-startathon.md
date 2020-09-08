@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Startathon - Project Vigilance
+excerpt_separator: <!--more-->
 ---
-
-![Startathon banner](/assets/img/2017-10-25-startathon/banner.png){: .inline }
 
 Somehow in my two years in SUTD I'd only ever gone for a hackathon once (and it was not a tech one but one on social entrepreneurship), so when a friend asked me to join him for #startathon I immediately agreed. 
 
 Little did I know that I'd injure my knee just a few days before the event and end up on crutches the whole time...
+<!--more-->
 
 But anyway. Despite my immobility I still had a good time! This hackathon has a big focus on hardware and making things, so they had a fabrication area with 3D printers and tools for building things with wood and cardboard. It's organized by [ideasinc](http://www.ideasinc.sg) and is a really good deal because $10 gets you a t-shirt and 4 really good meals xD
+
+![Startathon banner](/assets/img/2017-10-25-startathon/banner.png){: .inline }
 
 ### Challenge statements
 

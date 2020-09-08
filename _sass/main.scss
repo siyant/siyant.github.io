@@ -157,6 +157,27 @@ a {
   font-weight: 500;
 }
 
+div.post-listing {
+  color: #333;
+  display: block;
+  padding: 10px 20px;
+  margin: 0 -20px;
+  border-bottom: 1px solid #ecf1f2;
+  &:hover {
+    background: #f6f7f8;
+  }
+
+  h2 {
+    color: #379999;
+    margin-bottom: 0.2em;
+  }
+}
+
+.smalltext {
+  color: #727475;
+  font-size: 0.85em;
+}
+
 button,
 .btn {
   border: 1px solid #ddd;
@@ -347,6 +368,9 @@ div.gallery-thumb {
 }
 .relative {
   position: relative;
+}
+.margin0 {
+  margin: 0;
 }
 
 /* project cards */

@@ -3,5 +3,12 @@ layout: page
 ---
 
 {% for post in site.posts %}
-  <p>{{ post.date | date: "%-d %B %Y" }} | <a class="navbtn" href={{post.url}}>{{ post.title }}</a></p>
+
+<a href={{post.url}}>
+  <div class="post-listing">
+  <h2>{{ post.title }}</h2>
+  <p class="smalltext margin0">{{ post.date | date: "%-d %B %Y" }}</p>
+  <p>{{ post.excerpt }}</p>
+</div>
+</a>
 {% endfor %}
