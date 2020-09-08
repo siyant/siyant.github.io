@@ -175,19 +175,24 @@ button,
   display: inline-block;
 
   &:nth-of-type(5n + 1):hover {
-    border-color: #9be1e9;
+    border-color: #379999;
+    color: #379999;
   }
   &:nth-of-type(5n + 2):hover {
-    border-color: #c7f48b;
+    border-color: #3166cb;
+    color: #3166cb;
   }
   &:nth-of-type(5n + 3):hover {
-    border-color: #f5d361;
+    border-color: #663ab3;
+    color: #663ab3;
   }
   &:nth-of-type(5n + 4):hover {
-    border-color: #ee9957;
+    border-color: #7c33a3;
+    color: #7c33a3;
   }
   &:nth-of-type(5n + 5):hover {
-    border-color: #fd4b6e;
+    border-color: #95356b;
+    color: #95356b;
   }
 
   i.fa {
@@ -219,19 +224,19 @@ button,
     }
 
     &:nth-of-type(5n + 1):hover {
-      color: #9be1e9;
+      color: #a7eed0;
     }
     &:nth-of-type(5n + 2):hover {
-      color: #c7f48b;
+      color: #a7d4ee;
     }
     &:nth-of-type(5n + 3):hover {
-      color: #f5d361;
+      color: #c1b8f9;
     }
     &:nth-of-type(5n + 4):hover {
-      color: #ee9957;
+      color: #dab4ea;
     }
     &:nth-of-type(5n + 5):hover {
-      color: #fd4b6e;
+      color: #eac4da;
     }
   }
 
