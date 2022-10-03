@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Raleway:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Raleway:wght@400;600&display=swap");
 
 html,
 body,
@@ -96,7 +96,7 @@ body {
     grid-template-columns: auto 960px auto;
 
     &.home {
-      grid-template-columms: auto 768px auto;
+      grid-template-columns: auto 768px auto;
     }
   }
 }
@@ -117,8 +117,9 @@ img.fullwidth {
 }
 
 ol,
-ul {
-  line-height: 2rem;
+ul,
+li {
+  margin-bottom: 0.6em;
 }
 
 h1,
@@ -155,6 +156,36 @@ a {
   text-decoration: inherit;
   color: #118477;
   font-weight: 500;
+}
+
+a.footnote:before {
+  content: "[";
+}
+
+a.footnote:after {
+  content: "]";
+}
+
+figure {
+  margin: 1em 0;
+}
+@media (min-width: 36em) {
+  figure {
+    margin: 1em 20px;
+  }
+}
+@media (min-width: 36em) {
+  figure {
+    margin: 1em 20px;
+  }
+}
+@media (min-width: 48em) {
+  figure {
+    margin: 1em 40px;
+  }
+}
+figcaption {
+  color: #727475;
 }
 
 div.post-listing {
@@ -228,7 +259,7 @@ button,
   border-radius: 4px 4px 0 0;
   color: rgba(255, 255, 255, 0.5);
   margin: auto;
-  position: -webkit-sticky;;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 10;
