@@ -1,27 +1,71 @@
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 <script src="/assets/js/scripts.js"></script>
 
 {% if page.navtitle == 'about' %}
 <script src="https://use.fontawesome.com/c78001d543.js"></script>
-{% endif %}
-
-{% if page.layout == 'photography' %}
-  <script src="/assets/js/flickrapi.js"></script>
-  <script src="/assets/js/gallery.js"></script>
+{% endif %} {% if page.layout == 'photography' %}
+<script src="/assets/js/flickrapi.js"></script>
+<script src="/assets/js/gallery.js"></script>
 {% endif %}
 
 <script type="text/javascript">
-var clicky_site_ids = clicky_site_ids || [];
-clicky_site_ids.push(101095168);
-(function() {
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = '//static.getclicky.com/js';
-  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-})();
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101095168);
+  (function () {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "//static.getclicky.com/js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(s);
+  })();
 </script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101095168ns.gif" /></p></noscript>
+<noscript>
+  <p>
+    <img
+      alt="Clicky"
+      width="1"
+      height="1"
+      src="//in.getclicky.com/101095168ns.gif"
+    />
+  </p>
+</noscript>
+
+<script>
+  // from https://jekyllcodex.org/without-plugin/new-window-fix/
+  // open external links in a new window
+  function external_new_window() {
+    for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
+      var b = c[a];
+      if (b.getAttribute("href") && b.hostname !== location.hostname) {
+        b.target = "_blank";
+        b.rel = "noopener";
+      }
+    }
+  }
+  // open PDF links in a new window
+  function pdf_new_window() {
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink = 0; eleLink < links.length; eleLink++) {
+      if (
+        links[eleLink].href.indexOf(".pdf") !== -1 ||
+        links[eleLink].href.indexOf(".doc") !== -1 ||
+        links[eleLink].href.indexOf(".docx") !== -1
+      ) {
+        links[eleLink].onclick = function () {
+          window.open(this.href);
+          return false;
+        };
+      }
+    }
+  }
+  pdf_new_window();
+  external_new_window();
+</script>
