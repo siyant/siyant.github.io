@@ -116,6 +116,12 @@ img.fullwidth {
   width: 100%;
 }
 
+img + em {
+  display: block;
+  margin-top: -0.5em;
+  color: #666;
+}
+
 ol,
 ul,
 li {
