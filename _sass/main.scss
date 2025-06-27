@@ -258,6 +258,15 @@ button,
   } /* social buttons */
 }
 
+.btn-social {
+  padding: 4px;
+  color: #727475;
+
+  i {
+    vertical-align: sub;
+    }
+}
+
 .navbar {
   grid-area: n;
   background: rgba(0, 0, 0, 0.6);

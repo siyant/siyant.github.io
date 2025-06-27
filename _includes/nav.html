@@ -1,4 +1,3 @@
-
 {% if page.layout == "post" %}
   {% if page.collection == "posts" %}
     <div class="navbar">
@@ -15,10 +14,9 @@
 
 {% else %}
   <div class="navbar page">
-    {% unless page.navtitle == "home" %}<a class="btn navbtn" href="/">Home</a>{% endunless %}
-    {% unless page.navtitle == "about" %}<a class="btn navbtn" href="/about">About</a>{% endunless %}
-    {% unless page.navtitle == "projects" %}<a class="btn navbtn" href="/projects">Projects</a>{% endunless %}
-    {% unless page.navtitle == "posts" %}<a class="btn navbtn" href="/posts">Posts</a>{% endunless %}
-    {% unless page.navtitle == "photos" %}<a class="btn navbtn" href="/photog">Photos</a>{% endunless %}
+    <a class="btn navbtn" href="/">Home</a>
+    <a class="btn navbtn" href="/projects">Projects</a>
+    <a class="btn navbtn" href="/posts">Posts</a>
+    <a class="btn navbtn" href="/photog">Photos</a>
   </div>
 {% endif %}
