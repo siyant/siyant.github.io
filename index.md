@@ -26,13 +26,13 @@ navtitle: home
   </div>
 </div>
 
-I'm a software engineer who loves working across the stack, and am passionate about building products that users love.
+I'm a software engineer who loves working across the stack, and is passionate about building products that users love.
 
 Some cool stuff I've worked on:
 - building and deploying [a nationwide project during Covid-19](/projects/tracetogether-token)
 - delivering high-quality software for clients as part of a [consulting team](/2023/05/31/labs-first-month)
 - co-founding an [AI startup](https://cartograph.app) that automates software documentation
 
-I am experienced in React, Node.js, Python, Java and Kotlin, but I'm also able to pick up new languages and tools quickly to move a project forward. Currently, I am exploring how to use AI tools to build software faster and better (recently using Claude Code the most), and am eager to build impactful AI products.
+I am experienced in React, Node.js, Python, Java and Kotlin, and I'm also able to pick up new languages and tools quickly to move a project forward. Currently, I am exploring how to use AI tools to build software faster and better (recently using Claude Code the most), and am eager to build impactful AI products.
 
-When not on my laptop, I may be running, baking, travelling and taking photos, or most likely, sleeping.
+When I'm not on my laptop, you might find me running, baking, travelling, or most likely, sleeping.
