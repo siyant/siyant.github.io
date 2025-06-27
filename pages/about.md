@@ -7,13 +7,13 @@ permalink: /about
 
 Hello! I'm Si-Yan :)
 
-I'm a software engineer who loves building all kinds of things, and believes in using technology to improve people's lives. (That includes automating all the tedious things I'm too lazy to do manually 😂 although I usually end up spending even more time on the task)
+I'm a software engineer who loves working across the stack, and wants to build impactful products that users love.
 
-My expertise is in frontend development using React, but I'm also able to pick up new languages and tools quickly to move a project forward. Other than JavaScript/TypeScript, I am also proficient in Java and Python, and have dabbled in Flutter, Angular and Ruby on Rails.
+I have successfully built and deployed [a nationwide project during Covid-19](/projects/tracetogether-token), delivered high-quality software for clients as part of a [consulting team](/2023/05/31/labs-first-month), and co-founded an [AI startup](https://cartograph.app) that automates software documentation.
 
-I am currently working at the Government Technology Agency of Singapore (GovTech), in the Sensors and Internet of Things team. In this role, I develop software that allows government agencies to use IoT to improve their operations and services to citizens. Notable projects I have played a part in include [Personal Alert Button](/projects/pab) and [TraceTogether Token](/projects/tracetogether-token).
+I am experienced working in React, Node.js, Python, Java and Kotlin, but I'm also able to pick up new languages and tools quickly to move a project forward. Currently, I am having fun exploring how to use AI tools to build software faster and better (currently using Claude Code the most), and am eager to build impactful AI products.
 
-When not on my laptop, I may be running, baking, out taking photos somewhere, or most likely, sleeping.
+When not on my laptop, I may be running, baking, travelling and taking photos, or most likely, sleeping.
 
 <a class="btn" href="https://github.com/siyant/" aria-label="GitHub profile">
 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
