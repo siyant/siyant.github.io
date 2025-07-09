@@ -7,7 +7,7 @@ A beginner's guide to four essential `hledger` commands (`print`, `balance`, `ba
 
 Since last year, I have been using [hledger](https://hledger.org/) for tracking my personal finances (having been ~~forced~~ persuaded by my husband to give it a try). I diligently recorded all my transactions, knowing that all my financial data was captured perfectly in plain text. But I didn't know how to query that data to answer basic questions about my finances. How much have I been spending every month? What's my net worth now? The data was all there, but I didn't know how to extract it.
 
-That changed when I recently spent some time building [a desktop app](https://github.com/vivekkalyan/hledger-app) for hledger. I dived deep into the reports and options, and found four commands that answer 90% of my financial questions. This guide will show you how to use them to make sense of your finances.
+That changed when I recently spent some time building [a desktop app](https://github.com/siyant/hledger-app) for hledger. I dived deep into the reports and options, and found four commands that answer 90% of my financial questions. This guide will show you how to use them to make sense of your finances.
 
 **Prerequisites**: This guide assumes you already have hledger installed and some transactions recorded in your journal file. We'll focus purely on querying and analyzing your data.
 
