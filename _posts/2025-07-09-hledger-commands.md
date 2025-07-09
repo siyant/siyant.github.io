@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Guide: Essential hledger commands to make sense of your finances"
+title: "Making sense of your finances with hledger reports"
 ---
 
 A beginner's guide to four essential `hledger` commands (`print`, `balance`, `balancesheet` and `incomestatement`) for analysing your accounting or personal finance data.
