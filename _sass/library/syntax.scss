@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 pre.highlight {
 	padding: 1em;
 }
 
 .highlight, pre, code {
-	font-family: Inconsolata, monospace;
-	font-size: .85rem;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
 	line-height: 1.25rem;
+	word-spacing: normal;
+}
+
+p > code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 6px;
+    white-space: nowrap;
 }
 
 .highlight {
@@ -15,7 +23,7 @@ pre.highlight {
 	color: #f8f8f2;
 	border-radius: 4px;
 	max-width: 100%;
-	overflow-x: scroll;
+	overflow-x: auto;
 
 	pre {
 		position: relative;

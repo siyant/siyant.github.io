@@ -32,7 +32,7 @@ body {
   width: 100%;
   min-width: 300px;
   height: 100%;
-  font-size: 0.9em;
+  font-size: 15px;
 }
 
 .animatedFast {
@@ -57,8 +57,7 @@ body {
   grid-area: c;
   background: white;
   line-height: 1.5rem;
-  letter-spacing: 0.1px;
-  word-spacing: 1px;
+  word-spacing: 0.5px;
   color: #333;
   width: 100%;
   margin: 0 auto;
